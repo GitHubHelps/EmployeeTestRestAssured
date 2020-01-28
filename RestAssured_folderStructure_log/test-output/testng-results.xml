@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="7" total="36" passed="29">
+  <reporter-output>
+  </reporter-output>
+  <suite name="RestAssured" duration-ms="18687" started-at="2020-01-28T14:11:04Z" finished-at="2020-01-28T14:11:23Z">
+    <groups>
+    </groups>
+    <test name="Testing log4j, RestAssured, Data Driven, testNG" duration-ms="18687" started-at="2020-01-28T14:11:04Z" finished-at="2020-01-28T14:11:23Z">
+      <class name="RestAssured_folderStructure_log.TestCases.SingleEmployeeData">
+        <test-method status="PASS" signature="setup()[pri:0, instance:RestAssured_folderStructure_log.TestCases.SingleEmployeeData@13969fbe]" name="setup" is-config="true" duration-ms="4" started-at="2020-01-28T16:11:16Z" finished-at="2020-01-28T16:11:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="employeeInfo()[pri:0, instance:RestAssured_folderStructure_log.TestCases.SingleEmployeeData@13969fbe]" name="employeeInfo" is-config="true" duration-ms="3853" started-at="2020-01-28T16:11:16Z" finished-at="2020-01-28T16:11:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- employeeInfo -->
+        <test-method status="PASS" signature="contentEncoding()[pri:0, instance:RestAssured_folderStructure_log.TestCases.SingleEmployeeData@13969fbe]" name="contentEncoding" duration-ms="6" started-at="2020-01-28T16:11:20Z" finished-at="2020-01-28T16:11:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- contentEncoding -->
+        <test-method status="FAIL" signature="contentLength()[pri:0, instance:RestAssured_folderStructure_log.TestCases.SingleEmployeeData@13969fbe]" name="contentLength" duration-ms="3" started-at="2020-01-28T16:11:20Z" finished-at="2020-01-28T16:11:20Z">
+          <exception class="java.lang.NumberFormatException">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NumberFormatException: null
+	at java.lang.Integer.parseInt(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at RestAssured_folderStructure_log.TestCases.SingleEmployeeData.contentLength(SingleEmployeeData.java:95)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NumberFormatException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- contentLength -->
+        <test-method status="PASS" signature="contentType()[pri:0, instance:RestAssured_folderStructure_log.TestCases.SingleEmployeeData@13969fbe]" name="contentType" duration-ms="2" started-at="2020-01-28T16:11:20Z" finished-at="2020-01-28T16:11:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- contentType -->
+        <test-method status="PASS" signature="responseTime()[pri:0, instance:RestAssured_folderStructure_log.TestCases.SingleEmployeeData@13969fbe]" name="responseTime" duration-ms="2" started-at="2020-01-28T16:11:20Z" finished-at="2020-01-28T16:11:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- responseTime -->
+        <test-method status="PASS" signature="server()[pri:0, instance:RestAssured_folderStructure_log.TestCases.SingleEmployeeData@13969fbe]" name="server" duration-ms="5" started-at="2020-01-28T16:11:20Z" finished-at="2020-01-28T16:11:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- server -->
+        <test-method status="PASS" signature="statusCode()[pri:0, instance:RestAssured_folderStructure_log.TestCases.SingleEmployeeData@13969fbe]" name="statusCode" duration-ms="12" started-at="2020-01-28T16:11:20Z" finished-at="2020-01-28T16:11:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- statusCode -->
+        <test-method status="PASS" signature="statusLine()[pri:0, instance:RestAssured_folderStructure_log.TestCases.SingleEmployeeData@13969fbe]" name="statusLine" duration-ms="1" started-at="2020-01-28T16:11:20Z" finished-at="2020-01-28T16:11:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- statusLine -->
+      </class> <!-- RestAssured_folderStructure_log.TestCases.SingleEmployeeData -->
+      <class name="RestAssured_folderStructure_log.TestCases.updateEmployee">
+        <test-method status="PASS" signature="setup()[pri:0, instance:RestAssured_folderStructure_log.TestCases.updateEmployee@6aaa5eb0]" name="setup" is-config="true" duration-ms="3" started-at="2020-01-28T16:11:20Z" finished-at="2020-01-28T16:11:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="setupUrl()[pri:0, instance:RestAssured_folderStructure_log.TestCases.updateEmployee@6aaa5eb0]" name="setupUrl" is-config="true" duration-ms="2" started-at="2020-01-28T16:11:20Z" finished-at="2020-01-28T16:11:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupUrl -->
+        <test-method status="FAIL" signature="contentEncoding()[pri:0, instance:RestAssured_folderStructure_log.TestCases.updateEmployee@6aaa5eb0]" name="contentEncoding" duration-ms="1" started-at="2020-01-28T16:11:20Z" finished-at="2020-01-28T16:11:20Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at RestAssured_folderStructure_log.TestCases.updateEmployee.contentEncoding(updateEmployee.java:102)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- contentEncoding -->
+        <test-method status="FAIL" signature="contentType()[pri:0, instance:RestAssured_folderStructure_log.TestCases.updateEmployee@6aaa5eb0]" name="contentType" duration-ms="1" started-at="2020-01-28T16:11:20Z" finished-at="2020-01-28T16:11:20Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at RestAssured_folderStructure_log.TestCases.updateEmployee.contentType(updateEmployee.java:78)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- contentType -->
+        <test-method status="FAIL" signature="server()[pri:0, instance:RestAssured_folderStructure_log.TestCases.updateEmployee@6aaa5eb0]" name="server" duration-ms="1" started-at="2020-01-28T16:11:20Z" finished-at="2020-01-28T16:11:20Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at RestAssured_folderStructure_log.TestCases.updateEmployee.server(updateEmployee.java:90)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- server -->
+        <test-method status="FAIL" signature="statusCode()[pri:0, instance:RestAssured_folderStructure_log.TestCases.updateEmployee@6aaa5eb0]" name="statusCode" duration-ms="1" started-at="2020-01-28T16:11:20Z" finished-at="2020-01-28T16:11:20Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at RestAssured_folderStructure_log.TestCases.updateEmployee.statusCode(updateEmployee.java:56)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- statusCode -->
+        <test-method status="FAIL" signature="statusLine()[pri:0, instance:RestAssured_folderStructure_log.TestCases.updateEmployee@6aaa5eb0]" name="statusLine" duration-ms="1" started-at="2020-01-28T16:11:20Z" finished-at="2020-01-28T16:11:20Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at RestAssured_folderStructure_log.TestCases.updateEmployee.statusLine(updateEmployee.java:69)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- statusLine -->
+        <test-method status="PASS" signature="updEmployee()[pri:0, instance:RestAssured_folderStructure_log.TestCases.updateEmployee@6aaa5eb0]" name="updEmployee" duration-ms="805" started-at="2020-01-28T16:11:20Z" finished-at="2020-01-28T16:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updEmployee -->
+      </class> <!-- RestAssured_folderStructure_log.TestCases.updateEmployee -->
+      <class name="RestAssured_folderStructure_log.TestCases.employeeData">
+        <test-method status="PASS" signature="employeesInfo()[pri:0, instance:RestAssured_folderStructure_log.TestCases.employeeData@22f71333]" name="employeesInfo" is-config="true" duration-ms="3726" started-at="2020-01-28T16:11:12Z" finished-at="2020-01-28T16:11:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- employeesInfo -->
+        <test-method status="PASS" signature="contentEncoding()[pri:0, instance:RestAssured_folderStructure_log.TestCases.employeeData@22f71333]" name="contentEncoding" duration-ms="3" started-at="2020-01-28T16:11:16Z" finished-at="2020-01-28T16:11:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- contentEncoding -->
+        <test-method status="PASS" signature="contentLength()[pri:0, instance:RestAssured_folderStructure_log.TestCases.employeeData@22f71333]" name="contentLength" duration-ms="5" started-at="2020-01-28T16:11:16Z" finished-at="2020-01-28T16:11:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- contentLength -->
+        <test-method status="PASS" signature="contentType()[pri:0, instance:RestAssured_folderStructure_log.TestCases.employeeData@22f71333]" name="contentType" duration-ms="3" started-at="2020-01-28T16:11:16Z" finished-at="2020-01-28T16:11:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- contentType -->
+        <test-method status="PASS" signature="getAllEmployees()[pri:0, instance:RestAssured_folderStructure_log.TestCases.employeeData@22f71333]" name="getAllEmployees" duration-ms="8" started-at="2020-01-28T16:11:16Z" finished-at="2020-01-28T16:11:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAllEmployees -->
+        <test-method status="PASS" signature="responseTime()[pri:0, instance:RestAssured_folderStructure_log.TestCases.employeeData@22f71333]" name="responseTime" duration-ms="4" started-at="2020-01-28T16:11:16Z" finished-at="2020-01-28T16:11:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- responseTime -->
+        <test-method status="PASS" signature="server()[pri:0, instance:RestAssured_folderStructure_log.TestCases.employeeData@22f71333]" name="server" duration-ms="2" started-at="2020-01-28T16:11:16Z" finished-at="2020-01-28T16:11:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- server -->
+        <test-method status="PASS" signature="statusCode()[pri:0, instance:RestAssured_folderStructure_log.TestCases.employeeData@22f71333]" name="statusCode" duration-ms="1" started-at="2020-01-28T16:11:16Z" finished-at="2020-01-28T16:11:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- statusCode -->
+        <test-method status="PASS" signature="statusLine()[pri:0, instance:RestAssured_folderStructure_log.TestCases.employeeData@22f71333]" name="statusLine" duration-ms="3" started-at="2020-01-28T16:11:16Z" finished-at="2020-01-28T16:11:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- statusLine -->
+      </class> <!-- RestAssured_folderStructure_log.TestCases.employeeData -->
+      <class name="RestAssured_folderStructure_log.TestCases.deleteEmployee">
+        <test-method status="PASS" signature="setup()[pri:0, instance:RestAssured_folderStructure_log.TestCases.deleteEmployee@3498ed]" name="setup" is-config="true" duration-ms="3" started-at="2020-01-28T16:11:21Z" finished-at="2020-01-28T16:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="contentType()[pri:0, instance:RestAssured_folderStructure_log.TestCases.deleteEmployee@3498ed]" name="contentType" duration-ms="0" started-at="2020-01-28T16:11:21Z" finished-at="2020-01-28T16:11:21Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at RestAssured_folderStructure_log.TestCases.deleteEmployee.contentType(deleteEmployee.java:57)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- contentType -->
+        <test-method status="PASS" signature="deleteEmp()[pri:0, instance:RestAssured_folderStructure_log.TestCases.deleteEmployee@3498ed]" name="deleteEmp" duration-ms="2182" started-at="2020-01-28T16:11:21Z" finished-at="2020-01-28T16:11:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteEmp -->
+        <test-method status="PASS" signature="server()[pri:0, instance:RestAssured_folderStructure_log.TestCases.deleteEmployee@3498ed]" name="server" duration-ms="1" started-at="2020-01-28T16:11:23Z" finished-at="2020-01-28T16:11:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- server -->
+        <test-method status="PASS" signature="statusCode()[pri:0, instance:RestAssured_folderStructure_log.TestCases.deleteEmployee@3498ed]" name="statusCode" duration-ms="1" started-at="2020-01-28T16:11:23Z" finished-at="2020-01-28T16:11:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- statusCode -->
+        <test-method status="PASS" signature="statusLine()[pri:0, instance:RestAssured_folderStructure_log.TestCases.deleteEmployee@3498ed]" name="statusLine" duration-ms="1" started-at="2020-01-28T16:11:23Z" finished-at="2020-01-28T16:11:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- statusLine -->
+      </class> <!-- RestAssured_folderStructure_log.TestCases.deleteEmployee -->
+      <class name="RestAssured_folderStructure_log.TestCases.CreateEmployee">
+        <test-method status="PASS" signature="setupUrl()[pri:0, instance:RestAssured_folderStructure_log.TestCases.CreateEmployee@6cd8737]" name="setupUrl" is-config="true" duration-ms="977" started-at="2020-01-28T16:11:04Z" finished-at="2020-01-28T16:11:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupUrl -->
+        <test-method status="PASS" signature="addEmployee(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:RestAssured_folderStructure_log.TestCases.CreateEmployee@6cd8737]" name="addEmployee" duration-ms="3029" started-at="2020-01-28T16:11:06Z" data-provider="datatest" finished-at="2020-01-28T16:11:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Ivan]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[334.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[23.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addEmployee -->
+        <test-method status="PASS" signature="addEmployee(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:RestAssured_folderStructure_log.TestCases.CreateEmployee@6cd8737]" name="addEmployee" duration-ms="725" started-at="2020-01-28T16:11:09Z" data-provider="datatest" finished-at="2020-01-28T16:11:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Nikolay]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[553.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[26.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addEmployee -->
+        <test-method status="PASS" signature="addEmployee(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:RestAssured_folderStructure_log.TestCases.CreateEmployee@6cd8737]" name="addEmployee" duration-ms="785" started-at="2020-01-28T16:11:10Z" data-provider="datatest" finished-at="2020-01-28T16:11:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Kaloian]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[235.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[19.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addEmployee -->
+        <test-method status="PASS" signature="addEmployee(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:RestAssured_folderStructure_log.TestCases.CreateEmployee@6cd8737]" name="addEmployee" duration-ms="805" started-at="2020-01-28T16:11:11Z" data-provider="datatest" finished-at="2020-01-28T16:11:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Sofia]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[742.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[56.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addEmployee -->
+        <test-method status="PASS" signature="addEmployee(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:RestAssured_folderStructure_log.TestCases.CreateEmployee@6cd8737]" name="addEmployee" duration-ms="692" started-at="2020-01-28T16:11:12Z" data-provider="datatest" finished-at="2020-01-28T16:11:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[John]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[445.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[41.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addEmployee -->
+        <test-method status="PASS" signature="contentEncoding()[pri:0, instance:RestAssured_folderStructure_log.TestCases.CreateEmployee@6cd8737]" name="contentEncoding" duration-ms="2" started-at="2020-01-28T16:11:12Z" finished-at="2020-01-28T16:11:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- contentEncoding -->
+        <test-method status="PASS" signature="contentType()[pri:0, instance:RestAssured_folderStructure_log.TestCases.CreateEmployee@6cd8737]" name="contentType" duration-ms="3" started-at="2020-01-28T16:11:12Z" finished-at="2020-01-28T16:11:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- contentType -->
+        <test-method status="PASS" signature="server()[pri:0, instance:RestAssured_folderStructure_log.TestCases.CreateEmployee@6cd8737]" name="server" duration-ms="3" started-at="2020-01-28T16:11:12Z" finished-at="2020-01-28T16:11:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- server -->
+        <test-method status="PASS" signature="statusCode()[pri:0, instance:RestAssured_folderStructure_log.TestCases.CreateEmployee@6cd8737]" name="statusCode" duration-ms="2" started-at="2020-01-28T16:11:12Z" finished-at="2020-01-28T16:11:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- statusCode -->
+        <test-method status="PASS" signature="statusLine()[pri:0, instance:RestAssured_folderStructure_log.TestCases.CreateEmployee@6cd8737]" name="statusLine" duration-ms="2" started-at="2020-01-28T16:11:12Z" finished-at="2020-01-28T16:11:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- statusLine -->
+      </class> <!-- RestAssured_folderStructure_log.TestCases.CreateEmployee -->
+    </test> <!-- Testing log4j, RestAssured, Data Driven, testNG -->
+  </suite> <!-- RestAssured -->
+</testng-results>

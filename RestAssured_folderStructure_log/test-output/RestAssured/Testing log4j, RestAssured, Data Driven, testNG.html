@@ -1,0 +1,642 @@
+<html>
+<head>
+<title>TestNG:  Testing log4j, RestAssured, Data Driven, testNG</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Testing log4j, RestAssured, Data Driven, testNG</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>29/7/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Jan 28 16:11:04 EET 2020</td>
+</tr>
+<tr><td>Total time:</td><td>18 seconds (18687 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='RestAssured_folderStructure_log.TestCases.updateEmployee.contentEncoding()'><b>contentEncoding</b><br>Test class: RestAssured_folderStructure_log.TestCases.updateEmployee</td>
+<td><div><pre>java.lang.NullPointerException
+	at RestAssured_folderStructure_log.TestCases.updateEmployee.contentEncoding(updateEmployee.java:102)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1186657657", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1186657657'><pre>java.lang.NullPointerException
+	at RestAssured_folderStructure_log.TestCases.updateEmployee.contentEncoding(updateEmployee.java:102)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)
+</pre></div></td>
+<td>0</td>
+<td>RestAssured_folderStructure_log.TestCases.updateEmployee@6aaa5eb0</td></tr>
+<tr>
+<td title='RestAssured_folderStructure_log.TestCases.SingleEmployeeData.contentLength()'><b>contentLength</b><br>Test class: RestAssured_folderStructure_log.TestCases.SingleEmployeeData</td>
+<td><div><pre>java.lang.NumberFormatException: null
+	at java.lang.Integer.parseInt(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at RestAssured_folderStructure_log.TestCases.SingleEmployeeData.contentLength(SingleEmployeeData.java:95)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)
+</pre></div><a href='#' onClick='toggleBox("stack-trace814245389", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace814245389'><pre>java.lang.NumberFormatException: null
+	at java.lang.Integer.parseInt(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at RestAssured_folderStructure_log.TestCases.SingleEmployeeData.contentLength(SingleEmployeeData.java:95)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)
+</pre></div></td>
+<td>0</td>
+<td>RestAssured_folderStructure_log.TestCases.SingleEmployeeData@13969fbe</td></tr>
+<tr>
+<td title='RestAssured_folderStructure_log.TestCases.updateEmployee.contentType()'><b>contentType</b><br>Test class: RestAssured_folderStructure_log.TestCases.updateEmployee</td>
+<td><div><pre>java.lang.NullPointerException
+	at RestAssured_folderStructure_log.TestCases.updateEmployee.contentType(updateEmployee.java:78)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1011104118", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1011104118'><pre>java.lang.NullPointerException
+	at RestAssured_folderStructure_log.TestCases.updateEmployee.contentType(updateEmployee.java:78)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)
+</pre></div></td>
+<td>0</td>
+<td>RestAssured_folderStructure_log.TestCases.updateEmployee@6aaa5eb0</td></tr>
+<tr>
+<td title='RestAssured_folderStructure_log.TestCases.deleteEmployee.contentType()'><b>contentType</b><br>Test class: RestAssured_folderStructure_log.TestCases.deleteEmployee</td>
+<td><div><pre>java.lang.NullPointerException
+	at RestAssured_folderStructure_log.TestCases.deleteEmployee.contentType(deleteEmployee.java:57)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1898751355", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1898751355'><pre>java.lang.NullPointerException
+	at RestAssured_folderStructure_log.TestCases.deleteEmployee.contentType(deleteEmployee.java:57)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)
+</pre></div></td>
+<td>0</td>
+<td>RestAssured_folderStructure_log.TestCases.deleteEmployee@3498ed</td></tr>
+<tr>
+<td title='RestAssured_folderStructure_log.TestCases.updateEmployee.server()'><b>server</b><br>Test class: RestAssured_folderStructure_log.TestCases.updateEmployee</td>
+<td><div><pre>java.lang.NullPointerException
+	at RestAssured_folderStructure_log.TestCases.updateEmployee.server(updateEmployee.java:90)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)
+</pre></div><a href='#' onClick='toggleBox("stack-trace778806426", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace778806426'><pre>java.lang.NullPointerException
+	at RestAssured_folderStructure_log.TestCases.updateEmployee.server(updateEmployee.java:90)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)
+</pre></div></td>
+<td>0</td>
+<td>RestAssured_folderStructure_log.TestCases.updateEmployee@6aaa5eb0</td></tr>
+<tr>
+<td title='RestAssured_folderStructure_log.TestCases.updateEmployee.statusCode()'><b>statusCode</b><br>Test class: RestAssured_folderStructure_log.TestCases.updateEmployee</td>
+<td><div><pre>java.lang.NullPointerException
+	at RestAssured_folderStructure_log.TestCases.updateEmployee.statusCode(updateEmployee.java:56)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1596009860", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1596009860'><pre>java.lang.NullPointerException
+	at RestAssured_folderStructure_log.TestCases.updateEmployee.statusCode(updateEmployee.java:56)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)
+</pre></div></td>
+<td>0</td>
+<td>RestAssured_folderStructure_log.TestCases.updateEmployee@6aaa5eb0</td></tr>
+<tr>
+<td title='RestAssured_folderStructure_log.TestCases.updateEmployee.statusLine()'><b>statusLine</b><br>Test class: RestAssured_folderStructure_log.TestCases.updateEmployee</td>
+<td><div><pre>java.lang.NullPointerException
+	at RestAssured_folderStructure_log.TestCases.updateEmployee.statusLine(updateEmployee.java:69)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)
+</pre></div><a href='#' onClick='toggleBox("stack-trace793319856", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace793319856'><pre>java.lang.NullPointerException
+	at RestAssured_folderStructure_log.TestCases.updateEmployee.statusLine(updateEmployee.java:69)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)
+</pre></div></td>
+<td>0</td>
+<td>RestAssured_folderStructure_log.TestCases.updateEmployee@6aaa5eb0</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='RestAssured_folderStructure_log.TestCases.CreateEmployee.addEmployee()'><b>addEmployee</b><br>Test class: RestAssured_folderStructure_log.TestCases.CreateEmployee<br>Parameters: Ivan, 334.0, 23.0</td>
+<td></td>
+<td>3</td>
+<td>RestAssured_folderStructure_log.TestCases.CreateEmployee@6cd8737</td></tr>
+<tr>
+<td title='RestAssured_folderStructure_log.TestCases.CreateEmployee.addEmployee()'><b>addEmployee</b><br>Test class: RestAssured_folderStructure_log.TestCases.CreateEmployee<br>Parameters: Nikolay, 553.0, 26.0</td>
+<td></td>
+<td>0</td>
+<td>RestAssured_folderStructure_log.TestCases.CreateEmployee@6cd8737</td></tr>
+<tr>
+<td title='RestAssured_folderStructure_log.TestCases.CreateEmployee.addEmployee()'><b>addEmployee</b><br>Test class: RestAssured_folderStructure_log.TestCases.CreateEmployee<br>Parameters: Kaloian, 235.0, 19.0</td>
+<td></td>
+<td>0</td>
+<td>RestAssured_folderStructure_log.TestCases.CreateEmployee@6cd8737</td></tr>
+<tr>
+<td title='RestAssured_folderStructure_log.TestCases.CreateEmployee.addEmployee()'><b>addEmployee</b><br>Test class: RestAssured_folderStructure_log.TestCases.CreateEmployee<br>Parameters: Sofia, 742.0, 56.0</td>
+<td></td>
+<td>0</td>
+<td>RestAssured_folderStructure_log.TestCases.CreateEmployee@6cd8737</td></tr>
+<tr>
+<td title='RestAssured_folderStructure_log.TestCases.CreateEmployee.addEmployee()'><b>addEmployee</b><br>Test class: RestAssured_folderStructure_log.TestCases.CreateEmployee<br>Parameters: John, 445.0, 41.0</td>
+<td></td>
+<td>0</td>
+<td>RestAssured_folderStructure_log.TestCases.CreateEmployee@6cd8737</td></tr>
+<tr>
+<td title='RestAssured_folderStructure_log.TestCases.CreateEmployee.contentEncoding()'><b>contentEncoding</b><br>Test class: RestAssured_folderStructure_log.TestCases.CreateEmployee</td>
+<td></td>
+<td>0</td>
+<td>RestAssured_folderStructure_log.TestCases.CreateEmployee@6cd8737</td></tr>
+<tr>
+<td title='RestAssured_folderStructure_log.TestCases.employeeData.contentEncoding()'><b>contentEncoding</b><br>Test class: RestAssured_folderStructure_log.TestCases.employeeData</td>
+<td></td>
+<td>0</td>
+<td>RestAssured_folderStructure_log.TestCases.employeeData@22f71333</td></tr>
+<tr>
+<td title='RestAssured_folderStructure_log.TestCases.SingleEmployeeData.contentEncoding()'><b>contentEncoding</b><br>Test class: RestAssured_folderStructure_log.TestCases.SingleEmployeeData</td>
+<td></td>
+<td>0</td>
+<td>RestAssured_folderStructure_log.TestCases.SingleEmployeeData@13969fbe</td></tr>
+<tr>
+<td title='RestAssured_folderStructure_log.TestCases.employeeData.contentLength()'><b>contentLength</b><br>Test class: RestAssured_folderStructure_log.TestCases.employeeData</td>
+<td></td>
+<td>0</td>
+<td>RestAssured_folderStructure_log.TestCases.employeeData@22f71333</td></tr>
+<tr>
+<td title='RestAssured_folderStructure_log.TestCases.CreateEmployee.contentType()'><b>contentType</b><br>Test class: RestAssured_folderStructure_log.TestCases.CreateEmployee</td>
+<td></td>
+<td>0</td>
+<td>RestAssured_folderStructure_log.TestCases.CreateEmployee@6cd8737</td></tr>
+<tr>
+<td title='RestAssured_folderStructure_log.TestCases.employeeData.contentType()'><b>contentType</b><br>Test class: RestAssured_folderStructure_log.TestCases.employeeData</td>
+<td></td>
+<td>0</td>
+<td>RestAssured_folderStructure_log.TestCases.employeeData@22f71333</td></tr>
+<tr>
+<td title='RestAssured_folderStructure_log.TestCases.SingleEmployeeData.contentType()'><b>contentType</b><br>Test class: RestAssured_folderStructure_log.TestCases.SingleEmployeeData</td>
+<td></td>
+<td>0</td>
+<td>RestAssured_folderStructure_log.TestCases.SingleEmployeeData@13969fbe</td></tr>
+<tr>
+<td title='RestAssured_folderStructure_log.TestCases.deleteEmployee.deleteEmp()'><b>deleteEmp</b><br>Test class: RestAssured_folderStructure_log.TestCases.deleteEmployee</td>
+<td></td>
+<td>2</td>
+<td>RestAssured_folderStructure_log.TestCases.deleteEmployee@3498ed</td></tr>
+<tr>
+<td title='RestAssured_folderStructure_log.TestCases.employeeData.getAllEmployees()'><b>getAllEmployees</b><br>Test class: RestAssured_folderStructure_log.TestCases.employeeData</td>
+<td></td>
+<td>0</td>
+<td>RestAssured_folderStructure_log.TestCases.employeeData@22f71333</td></tr>
+<tr>
+<td title='RestAssured_folderStructure_log.TestCases.employeeData.responseTime()'><b>responseTime</b><br>Test class: RestAssured_folderStructure_log.TestCases.employeeData</td>
+<td></td>
+<td>0</td>
+<td>RestAssured_folderStructure_log.TestCases.employeeData@22f71333</td></tr>
+<tr>
+<td title='RestAssured_folderStructure_log.TestCases.SingleEmployeeData.responseTime()'><b>responseTime</b><br>Test class: RestAssured_folderStructure_log.TestCases.SingleEmployeeData</td>
+<td></td>
+<td>0</td>
+<td>RestAssured_folderStructure_log.TestCases.SingleEmployeeData@13969fbe</td></tr>
+<tr>
+<td title='RestAssured_folderStructure_log.TestCases.CreateEmployee.server()'><b>server</b><br>Test class: RestAssured_folderStructure_log.TestCases.CreateEmployee</td>
+<td></td>
+<td>0</td>
+<td>RestAssured_folderStructure_log.TestCases.CreateEmployee@6cd8737</td></tr>
+<tr>
+<td title='RestAssured_folderStructure_log.TestCases.employeeData.server()'><b>server</b><br>Test class: RestAssured_folderStructure_log.TestCases.employeeData</td>
+<td></td>
+<td>0</td>
+<td>RestAssured_folderStructure_log.TestCases.employeeData@22f71333</td></tr>
+<tr>
+<td title='RestAssured_folderStructure_log.TestCases.SingleEmployeeData.server()'><b>server</b><br>Test class: RestAssured_folderStructure_log.TestCases.SingleEmployeeData</td>
+<td></td>
+<td>0</td>
+<td>RestAssured_folderStructure_log.TestCases.SingleEmployeeData@13969fbe</td></tr>
+<tr>
+<td title='RestAssured_folderStructure_log.TestCases.deleteEmployee.server()'><b>server</b><br>Test class: RestAssured_folderStructure_log.TestCases.deleteEmployee</td>
+<td></td>
+<td>0</td>
+<td>RestAssured_folderStructure_log.TestCases.deleteEmployee@3498ed</td></tr>
+<tr>
+<td title='RestAssured_folderStructure_log.TestCases.CreateEmployee.statusCode()'><b>statusCode</b><br>Test class: RestAssured_folderStructure_log.TestCases.CreateEmployee</td>
+<td></td>
+<td>0</td>
+<td>RestAssured_folderStructure_log.TestCases.CreateEmployee@6cd8737</td></tr>
+<tr>
+<td title='RestAssured_folderStructure_log.TestCases.employeeData.statusCode()'><b>statusCode</b><br>Test class: RestAssured_folderStructure_log.TestCases.employeeData</td>
+<td></td>
+<td>0</td>
+<td>RestAssured_folderStructure_log.TestCases.employeeData@22f71333</td></tr>
+<tr>
+<td title='RestAssured_folderStructure_log.TestCases.SingleEmployeeData.statusCode()'><b>statusCode</b><br>Test class: RestAssured_folderStructure_log.TestCases.SingleEmployeeData</td>
+<td></td>
+<td>0</td>
+<td>RestAssured_folderStructure_log.TestCases.SingleEmployeeData@13969fbe</td></tr>
+<tr>
+<td title='RestAssured_folderStructure_log.TestCases.deleteEmployee.statusCode()'><b>statusCode</b><br>Test class: RestAssured_folderStructure_log.TestCases.deleteEmployee</td>
+<td></td>
+<td>0</td>
+<td>RestAssured_folderStructure_log.TestCases.deleteEmployee@3498ed</td></tr>
+<tr>
+<td title='RestAssured_folderStructure_log.TestCases.CreateEmployee.statusLine()'><b>statusLine</b><br>Test class: RestAssured_folderStructure_log.TestCases.CreateEmployee</td>
+<td></td>
+<td>0</td>
+<td>RestAssured_folderStructure_log.TestCases.CreateEmployee@6cd8737</td></tr>
+<tr>
+<td title='RestAssured_folderStructure_log.TestCases.employeeData.statusLine()'><b>statusLine</b><br>Test class: RestAssured_folderStructure_log.TestCases.employeeData</td>
+<td></td>
+<td>0</td>
+<td>RestAssured_folderStructure_log.TestCases.employeeData@22f71333</td></tr>
+<tr>
+<td title='RestAssured_folderStructure_log.TestCases.SingleEmployeeData.statusLine()'><b>statusLine</b><br>Test class: RestAssured_folderStructure_log.TestCases.SingleEmployeeData</td>
+<td></td>
+<td>0</td>
+<td>RestAssured_folderStructure_log.TestCases.SingleEmployeeData@13969fbe</td></tr>
+<tr>
+<td title='RestAssured_folderStructure_log.TestCases.deleteEmployee.statusLine()'><b>statusLine</b><br>Test class: RestAssured_folderStructure_log.TestCases.deleteEmployee</td>
+<td></td>
+<td>0</td>
+<td>RestAssured_folderStructure_log.TestCases.deleteEmployee@3498ed</td></tr>
+<tr>
+<td title='RestAssured_folderStructure_log.TestCases.updateEmployee.updEmployee()'><b>updEmployee</b><br>Test class: RestAssured_folderStructure_log.TestCases.updateEmployee</td>
+<td></td>
+<td>0</td>
+<td>RestAssured_folderStructure_log.TestCases.updateEmployee@6aaa5eb0</td></tr>
+</table><p>
+</body>
+</html>

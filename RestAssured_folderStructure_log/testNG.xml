@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="RestAssured" verbose="2"> <!-- verbose give us how detailed console info -->
+<listeners>
+	<listener class-name="RestAssured_folderStructure_log.Utilities.listener"></listener>
+</listeners>
+	<test name="Testing log4j, RestAssured, Data Driven, testNG">
+			<classes>
+				<class name="RestAssured_folderStructure_log.TestCases.CreateEmployee"></class>
+				<class name="RestAssured_folderStructure_log.TestCases.employeeData"></class>
+				<class name="RestAssured_folderStructure_log.TestCases.SingleEmployeeData"></class>
+				<class name="RestAssured_folderStructure_log.TestCases.updateEmployee"></class>
+				<class name="RestAssured_folderStructure_log.TestCases.deleteEmployee"></class>				
+			</classes>
+	</test>
+</suite>

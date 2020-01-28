@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="2" name="Failed suite [RestAssured]">
+  <listeners>
+    <listener class-name="RestAssured_folderStructure_log.Utilities.listener"/>
+  </listeners>
+  <test name="Testing log4j, RestAssured, Data Driven, testNG(failed)">
+    <classes>
+      <class name="RestAssured_folderStructure_log.TestCases.deleteEmployee">
+        <methods>
+          <include name="contentType"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- RestAssured_folderStructure_log.TestCases.deleteEmployee -->
+      <class name="RestAssured_folderStructure_log.TestCases.updateEmployee">
+        <methods>
+          <include name="contentEncoding"/>
+          <include name="statusCode"/>
+          <include name="contentType"/>
+          <include name="setup"/>
+          <include name="setupUrl"/>
+          <include name="statusLine"/>
+          <include name="server"/>
+        </methods>
+      </class> <!-- RestAssured_folderStructure_log.TestCases.updateEmployee -->
+      <class name="RestAssured_folderStructure_log.TestCases.employeeData">
+        <methods>
+          <include name="employeesInfo"/>
+        </methods>
+      </class> <!-- RestAssured_folderStructure_log.TestCases.employeeData -->
+      <class name="RestAssured_folderStructure_log.TestCases.SingleEmployeeData">
+        <methods>
+          <include name="setup"/>
+          <include name="employeeInfo"/>
+          <include name="contentLength"/>
+        </methods>
+      </class> <!-- RestAssured_folderStructure_log.TestCases.SingleEmployeeData -->
+      <class name="RestAssured_folderStructure_log.TestCases.CreateEmployee">
+        <methods>
+          <include name="setupUrl"/>
+        </methods>
+      </class> <!-- RestAssured_folderStructure_log.TestCases.CreateEmployee -->
+    </classes>
+  </test> <!-- Testing log4j, RestAssured, Data Driven, testNG(failed) -->
+</suite> <!-- Failed suite [RestAssured] -->
